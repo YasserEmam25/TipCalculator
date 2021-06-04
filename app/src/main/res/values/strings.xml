@@ -7,4 +7,7 @@
     <string name="amazing_20">Amazing (20%)</string>
     <string name="round_up">Round Up</string>
     <string name="calculate_tip">Calculate Tip</string>
+    <string name="final_output">Tips: %s</string>
+    <string name="error_output">Tips: ERROR</string>
+    <string name="please_enter_a_the_price">Please, Enter a the price!</string>
 </resources>

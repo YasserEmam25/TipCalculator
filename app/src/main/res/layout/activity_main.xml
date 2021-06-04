@@ -11,31 +11,31 @@
         android:id="@+id/et_text_input"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
+        android:hint="@string/cost_of_service"
         android:inputType="numberDecimal"
         android:textSize="26sp"
-        android:hint="@string/cost_of_service"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:text="@string/how_was_the_service"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
-        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_text_input"/>
+        app:layout_constraintTop_toBottomOf="@+id/et_text_input" />
 
     <RadioGroup
         android:id="@+id/rg_rating_service"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:orientation="vertical"
         android:checkedButton="@id/rb_amazing"
+        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_question">
 
@@ -44,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/amazing_20"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
 
 
         <RadioButton
@@ -52,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/good_18"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
 
 
         <RadioButton
@@ -60,7 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/ok_15"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
 
     </RadioGroup>
 
@@ -72,34 +72,34 @@
         android:checked="true"
         android:text="@string/round_up"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rg_rating_service"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rg_rating_service" />
 
     <Button
         android:id="@+id/btn_calculate_tip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/calculate_tip"
-        android:textStyle="bold"
-        android:textSize="20sp"
         android:layout_marginTop="10dp"
         android:paddingVertical="10dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/calculate_tip"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/roundup_switch"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/roundup_switch" />
 
     <TextView
         android:id="@+id/tv_result_tip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="Tips: $200.0"
+        android:layout_marginTop="30dp"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:layout_marginTop="30dp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_calculate_tip"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_calculate_tip"
+        tools:text="Tips: $200.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
