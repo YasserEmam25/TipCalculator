@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.TipCalculator.TextView.light" parent="Widget.MaterialComponents.TextView">
+        <item name="minHeight">48dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Widget.TipCalculator.Switch" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="minHeight">48dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.AppCompat.Body1</item>
+    </style>
+
+    <style name="Widget.TipCalculator.RadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="paddingStart">8dp</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.AppCompat.Body1</item>
+    </style>
+    <style name="Widget.TipCalculator.TextView.night" parent="Widget.MaterialComponents.TextView">
+        <item name="minHeight">48dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>
